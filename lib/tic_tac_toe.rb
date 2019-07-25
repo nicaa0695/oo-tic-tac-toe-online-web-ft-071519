@@ -90,4 +90,12 @@ def full?
     return true 
   end
 end
+
+def draw?
+  if !won? && full? == true 
+    true 
+  else
+    false
+  end 
+end
 end
