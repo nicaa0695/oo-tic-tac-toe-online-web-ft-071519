@@ -58,4 +58,14 @@ class TicTacToe
       turn
     end
   end
+  
+  def turn_count
+    count = 0 
+    @board.each do |token|
+      if token == "X" || token == "O"
+        count += 1 
+      end
+    end
+    return count
+  end
 end
