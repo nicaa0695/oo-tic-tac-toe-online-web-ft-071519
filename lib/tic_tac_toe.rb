@@ -30,8 +30,12 @@ class TicTacToe
     @board[index] = character
   end
   
+  def position_taken?(location)
+    @board[location] != " " && @board[location] != ""
+  end
+  
   def valid_move?(index)
-    index.between?(0, 8) && !position_taken?(index)
+    index.between?(0,8) && !position_taken?(index)
   end
   
   def turn 
