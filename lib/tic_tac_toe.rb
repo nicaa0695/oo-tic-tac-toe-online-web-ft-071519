@@ -68,4 +68,7 @@ class TicTacToe
     end
     return count
   end
+  
+  def won?
+    WI
 end
